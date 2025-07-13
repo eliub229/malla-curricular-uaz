@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular - Médico UAZ</title>
+  <style>
+    body { font-family: Arial; background: #f8f9fa; padding: 20px; }
+    h1, h2 { color: #2c3e50; }
+    .semestre { margin-bottom: 30px; }
+    .materia {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 5px;
+      cursor: pointer;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+    .materia:hover {
+      background-color: #e3f2fd;
+    }
+  </style>
+  <script>
+    function mostrar(nombre) {
+      alert(\"📘 \" + nombre + \"\\nDescripción disponible próximamente\");
+    }
+  </script>
+</head>
+<body>
+  <h1>Malla Curricular - Médico General UAZ</h1>
+
+  <div class=\"semestre\">
+    <h2>Primer Semestre</h2>
+    <div class=\"materia\" onclick=\"mostrar('Biología Celular')\">Biología Celular</div>
+    <div class=\"materia\" onclick=\"mostrar('Embriología')\">Embriología</div>
+    <div class=\"materia\" onclick=\"mostrar('Fisiología y Neurofisiología Básica')\">Fisiología y Neurofisiología Básica</div>
+    <div class=\"materia\" onclick=\"mostrar('Fundamentos y Anatomía General')\">Fundamentos y Anatomía General</div>
+    <div class=\"materia\" onclick=\"mostrar('Introducción a Ciencias de la Salud')\">Introducción a Ciencias de la Salud</div>
+  </div>
+
+  <!-- Puedes copiar este bloque y cambiar el semestre y materias -->
+
+  <div class=\"semestre\">
+    <h2>Segundo Semestre</h2>
+    <div class=\"materia\" onclick=\"mostrar('Bioestadística')\">Bioestadística</div>
+    <div class=\"materia\" onclick=\"mostrar('Bioquímica')\">Bioquímica</div>
+    <div class=\"materia\" onclick=\"mostrar('Fisiología de Aparatos y Sistemas')\">Fisiología de Aparatos y Sistemas</div>
+    <div class=\"materia\" onclick=\"mostrar('Histología')\">Histología</div>
+    <div class=\"materia\" onclick=\"mostrar('Neuroanatomía y Anatomía General')\">Neuroanatomía y Anatomía General</div>
+  </div>
+
+  <!-- Continúa con los siguientes semestres igual -->
+</body>
+</html>
